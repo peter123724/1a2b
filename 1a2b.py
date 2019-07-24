@@ -16,10 +16,12 @@ for i in range(4):
 usernum=[]
 print(ans)
 
+print("請輸入一串不重複的四位數字")
+
 while GameSet==0:
     
-    Reply_A=0
-    Reply_B=0
+    Reply_A=0  #幾a
+    Reply_B=0  #幾b
     
     usernum = input('input : ')
     for i in range(4):
@@ -37,8 +39,6 @@ while GameSet==0:
     
 print("恭喜答對!!")
 
-
-# In[ ]:
 
 
 
