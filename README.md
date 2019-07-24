@@ -54,5 +54,6 @@ while GameSet==0:
 print("恭喜答對!!")
 ```
 
+- 執行結果
 
 ![image](1a2b_result.jpg)
