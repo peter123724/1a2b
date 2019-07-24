@@ -53,3 +53,6 @@ while GameSet==0:
             exit
 print("恭喜答對!!")
 ```
+
+
+![image](1a2b_result.png)
