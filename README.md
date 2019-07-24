@@ -55,4 +55,4 @@ print("恭喜答對!!")
 ```
 
 
-![image](1a2b_result.png)
+![image](1a2b_result.jpg)
