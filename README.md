@@ -13,8 +13,63 @@
 
 - 一開始先作一個數字list,選四次,每次選一個數,並在每選完一個數後刪掉該數,確保不會選到重複數字
 
-- 接著由玩家輸入答案,並存成list
+```python
+num=(['1','2','3','4','5','6','7','8','9'])
+ans=[]
+for i in range(4):
+    ans.append(choice(num))
+    num.remove(ans[i])
 
-- 進入while迴圈判斷幾a幾b,因為有數字不重複的限制,直接確認玩家答案中的各數字是否存在於電腦選號,再判斷是否在同個位置,是則為A,否則為B
+```
 
-- 如果沒有拔成4A,則繼續循環,遊玩家輸入答案
+- 進入while迴圈,由玩家輸入答案,並存成list
+
+- 判斷幾a幾b,因為有數字不重複的限制,直接確認玩家答案中的各數字是否存在於電腦選號,再判斷是否在同個位置,是則為A,否則為B
+
+- 如果沒有拔成4A,則繼續循環,由玩家輸入答案
+
+```python
+
+
+from random import choice
+GameSet=0
+
+num=(['1','2','3','4','5','6','7','8','9'])
+ans=[]
+for i in range(4):
+    ans.append(choice(num))
+    num.remove(ans[i])
+
+usernum=[]
+print(ans)
+
+while GameSet==0:
+    
+    Reply_A=0
+    Reply_B=0
+    
+    usernum = input('input : ')
+    for i in range(4):
+        if usernum[i] in ans:
+            if usernum[i]==ans[i]:
+                Reply_A+=1
+            else:
+                Reply_B+=1
+        if Reply_A==4:
+            GameSet=1
+            
+        else:
+            exit
+    print('%dA%dB' % (Reply_A,Reply_B))
+    
+print("恭喜答對!!")
+
+
+# In[ ]:1234
+
+
+
+
+
+
+```
